@@ -27,11 +27,11 @@ main{
 }
 .pokedex{
     width: 100%;
-    max-width: 425px;
+    max-width: 390px;
 }
 .pokemonImagen{
     position: absolute;
-    bottom: 55%;
+    bottom: 52%;
     left: 50%;
     transform: translate(-60%, 10%);
     height: 18%;
@@ -42,16 +42,16 @@ main{
     font-weight: bold;
     color: gray;
     top:54.5%;
-    right: 36%;
+    right: 35%;
     font-size: clamp(8px, 5vw, 25px);
+    max-width: 20rem;
 }
 .pokemon__nombre{
     text-transform: uppercase;
 }
 @media (min-width:768px) {
   .pokemon{
-    font-size: 3.5rem;
-    
+    font-size: 3rem;
   }
 }
 .pokemon__id{
@@ -60,20 +60,20 @@ main{
 .buscarpoke{
     position: absolute;
     background: red;
-    top: 66%;
+    top: 64%;
     left: 13.5%;
     width: 65%;
 }
 .busqueda{
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     width: 100%;
     padding: 4%;
-    box-shadow: -.3rem .4rem 0 #888, -.5rem 1rem 0 #333;
+    box-shadow: -.5rem 1rem 0 #333;
 }
 .botones{
     position: absolute;
-    bottom: 10%;
+    bottom: 17%;
     left: 50%;
     width: 65%;
     transform: translate(-57%, 0);
@@ -100,4 +100,34 @@ background: linear-gradient(90deg, rgba(106,106,106,1) 8%, rgba(236,236,236,1) 1
 }
 .boton:last-of-type{
     margin-left: .8rem;
+}
+.boton2{
+    position: absolute;
+    top: 85%;
+    right: 30%;
+    height: 5%;
+    width: 45%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+header{
+    margin-bottom:2rem;
+    position: relative;
+}
+.titulo{
+   font-size: 5rem;
+   position: absolute;
+   margin-top: 2rem;
+   text-align: center;
+}
+.equipoPkmn{
+position: absolute;
+display: flex;
+justify-content: center;
+flex-direction: column;
+flex-wrap: nowrap;
+text-transform: capitalize;
+background-color: #4FFA59;
+margin-top: 10rem;
+left: 12%;
 }
