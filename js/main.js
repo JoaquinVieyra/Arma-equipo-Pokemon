@@ -17,9 +17,6 @@ function confirmar(){
 function masDeSeis(){
 Swal.fire('Ya haz llegado al limite de Pokemon en tu equipo');
 }
-function noAnadir(){
-    Swal.fire('El Pokemon que quieres agregar no existe o es mayor a la quinta generacion');
-}
 
 async function buscarPokemon (pokemon){
     const listaPokemon=  await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
@@ -81,6 +78,9 @@ async function agregarPokemon(){
         equipo.push(informacion);
         confirmar();
     }
+    if(equipo.length==6){
+        masDeSeis();
+    }
     pintarEquipo();
 }
  function pintarEquipo(){
@@ -90,6 +90,7 @@ async function agregarPokemon(){
         `<div style=" border-top: solid .2rem black;">
         <h6 style="font-size:3rem "> Pokemon: ${equipo[i].name}<h6>
         <p style="font-size:2rem; ">Numero Pokedex: ${equipo[i].id}</p>
+        <p style="font-size:2rem; ">Tipo: ${equipo[i]['types']['0']['type']['name']}</p>
         <img src="${equipo[i] ['sprites']['versions']['generation-v']
         ['black-white']['animated']['front_default']}" style="height:4rem">
         <p  onclick="sacarDelequipo(${i})" style="color:red;font-size:30px;
