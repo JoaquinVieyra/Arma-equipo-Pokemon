@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,28 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="imagenes/favicon-32x32.png">
     <link rel="stylesheet" href="css/styles.css">
-    <script defer src="js/main.js"></script>
     <title>Pokedex</title>
-    
+
 
 </head>
+<div class="fondo">
 
-<body>
-    <main>
-        <img src="#" alt="pokemon" class="pokemonImagen">
-        <h1 class="pokemon">
-            <p class="pokemon__id"></p>
-            <p class="pokemon__nombre"></p>
-        </h1>
-        <form class="buscarpoke">
-            <input type="search" class="busqueda" placeholder="Nombre o ID" required>
-        </form>
-        <div class="botones">
-            <button class="boton atras"onclick="atras()">Atras</button>
-            <button class="boton adelante" onclick="siguiente()">Siguiente</button>
-        </div>
-        <img src="./imagenes/pokedex.png" alt="pokedex" class="pokedex">
-    </main>
+    <body>
+        <main>
+            <img src="#" alt="pokemon" class="pokemonImagen">
+            <h1 class="pokemon">
+                <p class="pokemon__id"></p>
+                <p class="pokemon__nombre"></p>
+            </h1>
+            <form class="buscarpoke">
+                <input type="search" class="busqueda" placeholder="Nombre o ID" required>
+            </form>
+            <div class="botones">
+                <button class="boton atras" onclick="atras()">Atras</button>
+                <button class="boton adelante" onclick="siguiente()">Siguiente</button>
+            </div>
+            <button class=" boton boton2" onclick="agregarPokemon()">Agregar al equipo</button>
+            <img src="./imagenes/pokedex.png" alt="pokedex" class="pokedex">
+            <h1 class="titulo">Crea tu equipo!</h1>
+            <div class="equipoPkmn">
+            </div>
+</div>
+</main>
+<script  src="js/js.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+</div>
 
 </html>
